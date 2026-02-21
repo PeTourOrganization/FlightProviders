@@ -25,13 +25,13 @@ public class ProvidersEndPoints {
         this.searchServiceB = searchServiceB;
     }
 
-    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "ProviderARequest")
+    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "SearchRequestA")
     @ResponsePayload
     public SearchResult getFlightsAvailable(@RequestPayload SearchRequestA searchRequest) {
         return searchServiceA.availabilitySearch(searchRequest);
     }
 
-    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "ProviderBRequest")
+    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "SearchRequestB")
     @ResponsePayload
     public SearchResult getFlightsAvailable(@RequestPayload SearchRequestB searchRequest) {
         return searchServiceB.availabilitySearch(searchRequest);

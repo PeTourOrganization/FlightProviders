@@ -9,7 +9,7 @@ import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import java.time.LocalDateTime;
 
-@XmlRootElement(name = "ProviderARequest", namespace = "http://petour.com/flights")
+@XmlRootElement(name = "SearchRequestB", namespace = "http://petour.com/flights")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class SearchRequestB {
     @XmlElement(namespace = "http://petour.com/flights", required = true)
